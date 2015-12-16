@@ -2,6 +2,7 @@
 A simple compiler which can map a subset of c source code into mips assembly. 
 
 ## Description
+* Lexical, syntax, and semantic error handling
 * Declaration of constants, variables, arrays (3D and more!)
 * Code for assignments
 * If and while loops
