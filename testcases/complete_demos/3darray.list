@@ -1,0 +1,1019 @@
+[p]: type_specifier -> INTtok
+[p]: declaration_specifiers -> type_specifier
+[p]: direct_declarator -> identifier
+[p]: declarator -> direct_declarator
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[p]: init_declarator -> declarator EQUALtok initializer
+[p]: init_declarator_list -> init_declarator
+[p]: declaration -> declaration_specifiers init_declarator_list SEMItok
+[p]: external_declaration -> declaration
+[p]: translation_unit -> external_declaration
+int x = 0 ; 
+
+[p]: type_specifier -> INTtok
+[p]: declaration_specifiers -> type_specifier
+[p]: direct_declarator -> identifier
+[p]: direct_declarator -> direct_declarator OPEN_PARENtok CLOSE_PARENtok
+[p]: declarator -> direct_declarator
+int main ( ) { 
+
+[p]: type_specifier -> INTtok
+[p]: declaration_specifiers -> type_specifier
+[p]: direct_declarator -> identifier
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: constant_expression -> conditional_expression
+[p]: direct_declarator -> direct_declarator OPEN_SQUAREtok constant_expression CLOSE_SQUAREtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: constant_expression -> conditional_expression
+[p]: direct_declarator -> direct_declarator OPEN_SQUAREtok constant_expression CLOSE_SQUAREtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: constant_expression -> conditional_expression
+[p]: direct_declarator -> direct_declarator OPEN_SQUAREtok constant_expression CLOSE_SQUAREtok
+[p]: declarator -> direct_declarator
+[p]: init_declarator -> declarator
+[p]: init_declarator_list -> init_declarator
+[p]: declaration -> declaration_specifiers init_declarator_list SEMItok
+[p]: declaration_list -> declaration
+int arr [ 10 ] [ 10 ] [ 10 ] ; 
+
+[p]: type_specifier -> INTtok
+[p]: declaration_specifiers -> type_specifier
+[p]: direct_declarator -> identifier
+[p]: declarator -> direct_declarator
+[p]: init_declarator -> declarator
+[p]: init_declarator_list -> init_declarator
+[p]: direct_declarator -> identifier
+[p]: declarator -> direct_declarator
+[p]: init_declarator -> declarator
+[p]: init_declarator_list -> init_declarator_list COMMAtok init_declarator
+[p]: direct_declarator -> identifier
+[p]: declarator -> direct_declarator
+[p]: init_declarator -> declarator
+[p]: init_declarator_list -> init_declarator_list COMMAtok init_declarator
+[p]: declaration -> declaration_specifiers init_declarator_list SEMItok
+[p]: declaration_list -> declaration_list declaration
+int idx1 , idx2 , idx3 ; 
+
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> relational_expression LEFT_ANGLEtok shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: unary_expression -> INC_OPtok unary_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+for ( idx1 = 0 ; idx1 < 10 ; ++ idx1 ) { 
+
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> relational_expression LEFT_ANGLEtok shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: unary_expression -> INC_OPtok unary_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+for ( idx2 = 0 ; idx2 < 10 ; ++ idx2 ) { 
+
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> relational_expression LEFT_ANGLEtok shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: unary_expression -> INC_OPtok unary_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+for ( idx3 = 0 ; idx3 < 10 ; ++ idx3 ) { 
+
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> multiplicative_expression UNARY_ASTERISKtok cast_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> multiplicative_expression UNARY_ASTERISKtok cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: expression_statement -> expression SEMItok
+[p]: statement -> expression_statement
+[p]: statement_list -> statement
+arr [ idx1 ] [ idx2 ] [ idx3 ] = idx1 * idx2 * idx3 ; 
+
+[p]: compound_statement -> OPEN_CURLYtok statement_list CLOSE_CURLYtok
+[p]: statement -> compound_statement
+[p]: iteration_statement -> FORtok OPEN_PARENtok expression SEMItok expression SEMItok expression CLOSE_PARENtok statement
+[p]: statement -> iteration_statement
+[p]: statement_list -> statement
+} 
+
+[p]: compound_statement -> OPEN_CURLYtok statement_list CLOSE_CURLYtok
+[p]: statement -> compound_statement
+[p]: iteration_statement -> FORtok OPEN_PARENtok expression SEMItok expression SEMItok expression CLOSE_PARENtok statement
+[p]: statement -> iteration_statement
+[p]: statement_list -> statement
+} 
+
+[p]: compound_statement -> OPEN_CURLYtok statement_list CLOSE_CURLYtok
+[p]: statement -> compound_statement
+[p]: iteration_statement -> FORtok OPEN_PARENtok expression SEMItok expression SEMItok expression CLOSE_PARENtok statement
+[p]: statement -> iteration_statement
+[p]: statement_list -> statement
+} 
+
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> relational_expression LEFT_ANGLEtok shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: unary_expression -> INC_OPtok unary_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+for ( idx1 = 0 ; idx1 < 10 ; ++ idx1 ) { 
+
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> relational_expression LEFT_ANGLEtok shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: unary_expression -> INC_OPtok unary_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+for ( idx2 = 0 ; idx2 < 10 ; ++ idx2 ) { 
+
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> relational_expression LEFT_ANGLEtok shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: unary_expression -> INC_OPtok unary_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+for ( idx3 = 0 ; idx3 < 10 ; ++ idx3 ) { 
+
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> multiplicative_expression UNARY_ASTERISKtok cast_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> multiplicative_expression UNARY_ASTERISKtok cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: argument_expression_list -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_PARENtok argument_expression_list CLOSE_PARENtok
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: expression_statement -> expression SEMItok
+[p]: statement -> expression_statement
+[p]: statement_list -> statement
+print_int ( idx1 * idx2 * idx3 ) ; 
+
+[p]: compound_statement -> OPEN_CURLYtok statement_list CLOSE_CURLYtok
+[p]: statement -> compound_statement
+[p]: iteration_statement -> FORtok OPEN_PARENtok expression SEMItok expression SEMItok expression CLOSE_PARENtok statement
+[p]: statement -> iteration_statement
+[p]: statement_list -> statement
+} 
+
+[p]: compound_statement -> OPEN_CURLYtok statement_list CLOSE_CURLYtok
+[p]: statement -> compound_statement
+[p]: iteration_statement -> FORtok OPEN_PARENtok expression SEMItok expression SEMItok expression CLOSE_PARENtok statement
+[p]: statement -> iteration_statement
+[p]: statement_list -> statement
+} 
+
+[p]: compound_statement -> OPEN_CURLYtok statement_list CLOSE_CURLYtok
+[p]: statement -> compound_statement
+[p]: iteration_statement -> FORtok OPEN_PARENtok expression SEMItok expression SEMItok expression CLOSE_PARENtok statement
+[p]: statement -> iteration_statement
+[p]: statement_list -> statement_list statement
+} 
+
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> multiplicative_expression UNARY_ASTERISKtok cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: expression_statement -> expression SEMItok
+[p]: statement -> expression_statement
+[p]: statement_list -> statement_list statement
+arr [ 0 ] [ 0 ] [ 0 ] = arr [ 9 ] [ 9 ] [ 9 ] * arr [ 9 ] [ 9 ] [ 8 ] ; 
+
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: argument_expression_list -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_PARENtok argument_expression_list CLOSE_PARENtok
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: expression_statement -> expression SEMItok
+[p]: statement -> expression_statement
+[p]: statement_list -> statement_list statement
+print_int ( arr [ 0 ] [ 0 ] [ 0 ] ) ; 
+
+[p]: compound_statement -> OPEN_CURLYtok declaration_list statement_list CLOSE_CURLYtok
+[p]: function_definition -> declaration_specifiers declarator compound_statement
+[p]: external_declaration -> function_definition
+[p]: translation_unit -> translation_unit external_declaration

@@ -1,0 +1,357 @@
+digraph g {
+
+15 [label="translation_unit"];
+
+13 [label="declaration"];
+
+15 -> 13;
+
+371 [label="specifier"];
+
+13 -> 371;
+
+0 [label="int"];
+
+371 -> 0;
+
+12 [label="init_declarator_list"];
+
+13 -> 12;
+
+9 [label="function"];
+
+12 -> 9;
+
+3 [label="factorial"];
+
+9 -> 3;
+
+7 [label="parameter_list"];
+
+9 -> 7;
+
+6 [label="param"];
+
+7 -> 6;
+
+4 [label="int"];
+
+6 -> 4;
+
+247 [label="function_definition"];
+
+15 -> 247;
+
+372 [label="specifier"];
+
+247 -> 372;
+
+16 [label="int"];
+
+372 -> 16;
+
+20 [label="function"];
+
+247 -> 20;
+
+19 [label="main"];
+
+20 -> 19;
+
+246 [label="{}"];
+
+247 -> 246;
+
+48 [label="declaration_list"];
+
+246 -> 48;
+
+47 [label="declaration"];
+
+48 -> 47;
+
+373 [label="specifier"];
+
+47 -> 373;
+
+22 [label="int"];
+
+373 -> 22;
+
+46 [label="init_declarator_list"];
+
+47 -> 46;
+
+374 [label="="];
+
+46 -> 374;
+
+25 [label="fact"];
+
+374 -> 25;
+
+27 [label="10"];
+
+374 -> 27;
+
+56 [label="declaration"];
+
+48 -> 56;
+
+375 [label="specifier"];
+
+56 -> 375;
+
+49 [label="int"];
+
+375 -> 49;
+
+55 [label="init_declarator_list"];
+
+56 -> 55;
+
+52 [label="total"];
+
+55 -> 52;
+
+102 [label="statement_list"];
+
+246 -> 102;
+
+101 [label="statement"];
+
+102 -> 101;
+
+61 [label="="];
+
+101 -> 61;
+
+57 [label="total"];
+
+61 -> 57;
+
+83 [label="function"];
+
+61 -> 83;
+
+62 [label="factorial"];
+
+83 -> 62;
+
+82 [label="argument_expression_list"];
+
+83 -> 82;
+
+65 [label="fact"];
+
+82 -> 65;
+
+141 [label="statement"];
+
+102 -> 141;
+
+124 [label="function"];
+
+141 -> 124;
+
+103 [label="print_int"];
+
+124 -> 103;
+
+123 [label="argument_expression_list"];
+
+124 -> 123;
+
+106 [label="total"];
+
+123 -> 106;
+
+186 [label="statement"];
+
+102 -> 186;
+
+146 [label="="];
+
+186 -> 146;
+
+142 [label="total"];
+
+146 -> 142;
+
+168 [label="function"];
+
+146 -> 168;
+
+147 [label="factorial"];
+
+168 -> 147;
+
+167 [label="argument_expression_list"];
+
+168 -> 167;
+
+150 [label="12"];
+
+167 -> 150;
+
+225 [label="statement"];
+
+102 -> 225;
+
+208 [label="function"];
+
+225 -> 208;
+
+187 [label="print_int"];
+
+208 -> 187;
+
+207 [label="argument_expression_list"];
+
+208 -> 207;
+
+190 [label="total"];
+
+207 -> 190;
+
+245 [label="statement"];
+
+102 -> 245;
+
+244 [label="return"];
+
+245 -> 244;
+
+226 [label="0"];
+
+244 -> 226;
+
+369 [label="function_definition"];
+
+15 -> 369;
+
+376 [label="specifier"];
+
+369 -> 376;
+
+249 [label="int"];
+
+376 -> 249;
+
+261 [label="function"];
+
+369 -> 261;
+
+252 [label="factorial"];
+
+261 -> 252;
+
+259 [label="parameter_list"];
+
+261 -> 259;
+
+258 [label="param"];
+
+259 -> 258;
+
+253 [label="int"];
+
+258 -> 253;
+
+256 [label="num"];
+
+258 -> 256;
+
+368 [label="{}"];
+
+369 -> 368;
+
+315 [label="statement_list"];
+
+368 -> 315;
+
+314 [label="statement"];
+
+315 -> 314;
+
+313 [label="if"];
+
+314 -> 313;
+
+280 [label="<="];
+
+313 -> 280;
+
+263 [label="num"];
+
+280 -> 263;
+
+272 [label="1"];
+
+280 -> 272;
+
+312 [label="statement"];
+
+313 -> 312;
+
+311 [label="{}"];
+
+312 -> 311;
+
+310 [label="statement_list"];
+
+311 -> 310;
+
+309 [label="statement"];
+
+310 -> 309;
+
+308 [label="return"];
+
+309 -> 308;
+
+290 [label="1"];
+
+308 -> 290;
+
+367 [label="statement"];
+
+315 -> 367;
+
+366 [label="return"];
+
+367 -> 366;
+
+353 [label="*"];
+
+366 -> 353;
+
+344 [label="function"];
+
+353 -> 344;
+
+316 [label="factorial"];
+
+344 -> 316;
+
+343 [label="argument_expression_list"];
+
+344 -> 343;
+
+332 [label="-"];
+
+343 -> 332;
+
+319 [label="num"];
+
+332 -> 319;
+
+326 [label="1"];
+
+332 -> 326;
+
+348 [label="num"];
+
+353 -> 348;
+
+}

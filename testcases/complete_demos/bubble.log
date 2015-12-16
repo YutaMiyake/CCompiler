@@ -1,0 +1,1278 @@
+[S]: A new symbol table is pushed on ===========================================
+//int
+INTtok
+
+[p]: type_specifier -> INTtok
+//main
+id
+
+[p]: declaration_specifiers -> type_specifier
+[p]: direct_declarator -> identifier
+//(
+OPEN_PARENtok
+
+//)
+CLOSE_PARENtok
+
+[p]: direct_declarator -> direct_declarator OPEN_PARENtok CLOSE_PARENtok
+//{
+OPEN_CURLYtok
+
+[p]: declarator -> direct_declarator
+[S]: Symbol main is not found at top level
+[S]: Symbol main is not found at any parent level
+[S]: Symbol main is not found at top level
+[S]: Symbol main is not found at any parent level
+[S]: Symbol 'main' is inserted at level #0
+[S]: A new symbol table is pushed on ===========================================
+[S]: Symbol main is not found at top level
+[S]: Symbol main is found at level 0
+[S]: Symbol main is not found at top level
+[S]: Symbol main is found at level 0
+//int
+INTtok
+
+[p]: type_specifier -> INTtok
+//numbers
+id
+
+[p]: declaration_specifiers -> type_specifier
+[p]: direct_declarator -> identifier
+//[
+OPEN_SQUAREtok
+
+//10
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//]
+CLOSE_SQUAREtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: constant_expression -> conditional_expression
+[p]: direct_declarator -> direct_declarator OPEN_SQUAREtok constant_expression CLOSE_SQUAREtok
+//=
+EQUALtok
+
+[p]: declarator -> direct_declarator
+//{
+OPEN_CURLYtok
+
+//5
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//,
+COMMAtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[p]: initializer_list -> initializer
+//15
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//,
+COMMAtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[p]: initializer_list -> initializer_list COMMAtok initializer
+//8
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//,
+COMMAtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[p]: initializer_list -> initializer_list COMMAtok initializer
+//10
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//,
+COMMAtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[p]: initializer_list -> initializer_list COMMAtok initializer
+//12
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//,
+COMMAtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[p]: initializer_list -> initializer_list COMMAtok initializer
+//4
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//,
+COMMAtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[p]: initializer_list -> initializer_list COMMAtok initializer
+//9
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//,
+COMMAtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[p]: initializer_list -> initializer_list COMMAtok initializer
+//2
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//,
+COMMAtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[p]: initializer_list -> initializer_list COMMAtok initializer
+//7
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//,
+COMMAtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[p]: initializer_list -> initializer_list COMMAtok initializer
+//1
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//}
+CLOSE_CURLYtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[p]: initializer_list -> initializer_list COMMAtok initializer
+[p]: initializer -> OPEN_CURLYtok initializer_list CLOSE_CURLYtok
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is not found at any parent level
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is not found at any parent level
+[S]: Symbol 'numbers' is inserted at level #1
+[S]: Symbol numbers is found at top level
+[p]: init_declarator -> declarator EQUALtok initializer
+[p]: init_declarator_list -> init_declarator
+//;
+SEMItok
+
+[p]: declaration -> declaration_specifiers init_declarator_list SEMItok
+[p]: declaration_list -> declaration
+//int
+INTtok
+
+[p]: type_specifier -> INTtok
+//size
+id
+
+[p]: declaration_specifiers -> type_specifier
+[p]: direct_declarator -> identifier
+//=
+EQUALtok
+
+[p]: declarator -> direct_declarator
+//10
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[S]: Symbol size is not found at top level
+[S]: Symbol size is not found at any parent level
+[S]: Symbol size is not found at top level
+[S]: Symbol size is not found at any parent level
+[S]: Symbol 'size' is inserted at level #1
+[S]: Symbol size is found at top level
+[p]: init_declarator -> declarator EQUALtok initializer
+[p]: init_declarator_list -> init_declarator
+[p]: declaration -> declaration_specifiers init_declarator_list SEMItok
+[p]: declaration_list -> declaration_list declaration
+//int
+INTtok
+
+[p]: type_specifier -> INTtok
+//swapped
+id
+
+[p]: declaration_specifiers -> type_specifier
+[p]: direct_declarator -> identifier
+//=
+EQUALtok
+
+[p]: declarator -> direct_declarator
+//1
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[S]: Symbol swapped is not found at top level
+[S]: Symbol swapped is not found at any parent level
+[S]: Symbol swapped is not found at top level
+[S]: Symbol swapped is not found at any parent level
+[S]: Symbol 'swapped' is inserted at level #1
+[S]: Symbol swapped is found at top level
+[p]: init_declarator -> declarator EQUALtok initializer
+[p]: init_declarator_list -> init_declarator
+[p]: declaration -> declaration_specifiers init_declarator_list SEMItok
+[p]: declaration_list -> declaration_list declaration
+//int
+INTtok
+
+[p]: type_specifier -> INTtok
+//index
+id
+
+[p]: declaration_specifiers -> type_specifier
+[p]: direct_declarator -> identifier
+//=
+EQUALtok
+
+[p]: declarator -> direct_declarator
+//0
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[S]: Symbol index is not found at top level
+[S]: Symbol index is not found at any parent level
+[S]: Symbol index is not found at top level
+[S]: Symbol index is not found at any parent level
+[S]: Symbol 'index' is inserted at level #1
+[S]: Symbol index is found at top level
+[p]: init_declarator -> declarator EQUALtok initializer
+[p]: init_declarator_list -> init_declarator
+[p]: declaration -> declaration_specifiers init_declarator_list SEMItok
+[p]: declaration_list -> declaration_list declaration
+//int
+INTtok
+
+[p]: type_specifier -> INTtok
+//temp
+id
+
+[p]: declaration_specifiers -> type_specifier
+[p]: direct_declarator -> identifier
+//=
+EQUALtok
+
+[p]: declarator -> direct_declarator
+//0
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: initializer -> assignment_expression
+[S]: Symbol temp is not found at top level
+[S]: Symbol temp is not found at any parent level
+[S]: Symbol temp is not found at top level
+[S]: Symbol temp is not found at any parent level
+[S]: Symbol 'temp' is inserted at level #1
+[S]: Symbol temp is found at top level
+[p]: init_declarator -> declarator EQUALtok initializer
+[p]: init_declarator_list -> init_declarator
+[p]: declaration -> declaration_specifiers init_declarator_list SEMItok
+[p]: declaration_list -> declaration_list declaration
+//while
+WHILEtok
+
+//(
+OPEN_PARENtok
+
+//swapped
+id
+
+[S]: Symbol swapped is found at top level
+[S]: Symbol swapped is found at top level
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//)
+CLOSE_PARENtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+//{
+OPEN_CURLYtok
+
+[S]: A new symbol table is pushed on ===========================================
+//swapped
+id
+
+//=
+EQUALtok
+
+[S]: Symbol swapped is not found at top level
+[S]: Symbol swapped is found at level 0
+[S]: Symbol swapped is not found at top level
+[S]: Symbol swapped is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+//0
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: expression_statement -> expression SEMItok
+[p]: statement -> expression_statement
+[p]: statement_list -> statement
+//index
+id
+
+//=
+EQUALtok
+
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+//9
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: expression_statement -> expression SEMItok
+[p]: statement -> expression_statement
+[p]: statement_list -> statement_list statement
+//for
+FORtok
+
+//(
+OPEN_PARENtok
+
+//index
+id
+
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+//index
+id
+
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//>=
+GE_OPtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+//1
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> relational_expression GE_OPtok shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+//index
+id
+
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//--
+DEC_OPtok
+
+[p]: postfix_expression -> postfix_expression DEC_OPtok
+//)
+CLOSE_PARENtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+//{
+OPEN_CURLYtok
+
+[S]: A new symbol table is pushed on ===========================================
+//if
+IFtok
+
+//(
+OPEN_PARENtok
+
+//numbers
+id
+
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//[
+OPEN_SQUAREtok
+
+//index
+id
+
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//]
+CLOSE_SQUAREtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+//<
+LEFT_ANGLEtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+//numbers
+id
+
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//[
+OPEN_SQUAREtok
+
+//index
+id
+
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//-
+UNARY_MINUStok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+//1
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//]
+CLOSE_SQUAREtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> additive_expression UNARY_MINUStok multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+//)
+CLOSE_PARENtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> relational_expression LEFT_ANGLEtok shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+//{
+OPEN_CURLYtok
+
+[S]: A new symbol table is pushed on ===========================================
+//temp
+id
+
+//=
+EQUALtok
+
+[S]: Symbol temp is not found at top level
+[S]: Symbol temp is found at level 0
+[S]: Symbol temp is not found at top level
+[S]: Symbol temp is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+//numbers
+id
+
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//[
+OPEN_SQUAREtok
+
+//index
+id
+
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//-
+UNARY_MINUStok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+//1
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//]
+CLOSE_SQUAREtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> additive_expression UNARY_MINUStok multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: expression_statement -> expression SEMItok
+[p]: statement -> expression_statement
+[p]: statement_list -> statement
+//numbers
+id
+
+//[
+OPEN_SQUAREtok
+
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//index
+id
+
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//-
+UNARY_MINUStok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+//1
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//]
+CLOSE_SQUAREtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> additive_expression UNARY_MINUStok multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+//=
+EQUALtok
+
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+//numbers
+id
+
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//[
+OPEN_SQUAREtok
+
+//index
+id
+
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//]
+CLOSE_SQUAREtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: expression_statement -> expression SEMItok
+[p]: statement -> expression_statement
+[p]: statement_list -> statement_list statement
+//numbers
+id
+
+//[
+OPEN_SQUAREtok
+
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[S]: Symbol numbers is not found at top level
+[S]: Symbol numbers is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//index
+id
+
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[S]: Symbol index is not found at top level
+[S]: Symbol index is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//]
+CLOSE_SQUAREtok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: postfix_expression -> postfix_expression OPEN_SQUAREtok expression CLOSE_SQUAREtok
+//=
+EQUALtok
+
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+//temp
+id
+
+[S]: Symbol temp is not found at top level
+[S]: Symbol temp is found at level 0
+[S]: Symbol temp is not found at top level
+[S]: Symbol temp is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: expression_statement -> expression SEMItok
+[p]: statement -> expression_statement
+[p]: statement_list -> statement_list statement
+//swapped
+id
+
+//=
+EQUALtok
+
+[S]: Symbol swapped is not found at top level
+[S]: Symbol swapped is found at level 0
+[S]: Symbol swapped is not found at top level
+[S]: Symbol swapped is found at level 0
+[p]: primary_expression -> identifier
+[p]: postfix_expression -> primary_expression
+[p]: unary_expression -> postfix_expression
+[p]: assignment_operator -> EQUALtok
+//1
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: assignment_expression -> unary_expression assignment_operator assignment_expression
+[p]: expression -> assignment_expression
+[p]: expression_statement -> expression SEMItok
+[p]: statement -> expression_statement
+[p]: statement_list -> statement_list statement
+//}
+CLOSE_CURLYtok
+
+[S]: The top symbol table is popped off ========================================
+[p]: compound_statement -> OPEN_CURLYtok statement_list CLOSE_CURLYtok
+[p]: statement -> compound_statement
+//}
+CLOSE_CURLYtok
+
+[p]: selection_statement -> IFtok OPEN_PARENtok expression CLOSE_PARENtok statement
+[p]: statement -> selection_statement
+[p]: statement_list -> statement
+[S]: The top symbol table is popped off ========================================
+[p]: compound_statement -> OPEN_CURLYtok statement_list CLOSE_CURLYtok
+[p]: statement -> compound_statement
+[p]: iteration_statement -> FORtok OPEN_PARENtok expression SEMItok expression SEMItok expression CLOSE_PARENtok statement
+[p]: statement -> iteration_statement
+[p]: statement_list -> statement_list statement
+//}
+CLOSE_CURLYtok
+
+[S]: The top symbol table is popped off ========================================
+[p]: compound_statement -> OPEN_CURLYtok statement_list CLOSE_CURLYtok
+[p]: statement -> compound_statement
+[p]: iteration_statement -> WHILEtok OPEN_PARENtok expression CLOSE_PARENtok statement
+[p]: statement -> iteration_statement
+[p]: statement_list -> statement
+//return
+RETURNtok
+
+//0
+INTEGER_CONSTANTtok
+
+[p]: constant -> INTEGER_CONSTANTtok
+[p]: primary_expression -> constant
+[p]: postfix_expression -> primary_expression
+//;
+SEMItok
+
+[p]: unary_expression -> postfix_expression
+[p]: cast_expression -> unary_expression
+[p]: multiplicative_expression -> cast_expression
+[p]: additive_expression -> multiplicative_expression
+[p]: shift_expression -> additive_expression
+[p]: relational_expression -> shift_expression
+[p]: equality_expression -> relational_expression
+[p]: and_expression -> equality_expression
+[p]: exclusive_or_expression -> and_expression
+[p]: inclusive_or_expression -> exclusive_or_expression
+[p]: logical_and_expression -> inclusive_or_expression
+[p]: logical_or_expression -> logical_and_expression
+[p]: conditional_expression -> logical_or_expression
+[p]: assignment_expression -> conditional_expression
+[p]: expression -> assignment_expression
+[p]: jump_statement -> RETURNtok expression SEMItok
+[p]: statement -> jump_statement
+[p]: statement_list -> statement_list statement
+//}
+CLOSE_CURLYtok
+
+[S]: The top symbol table is popped off ========================================
+[p]: compound_statement -> OPEN_CURLYtok declaration_list statement_list CLOSE_CURLYtok
+[p]: function_definition -> declaration_specifiers declarator compound_statement
+[p]: external_declaration -> function_definition
+[p]: translation_unit -> external_declaration
+[S]: The top symbol table is popped off ========================================

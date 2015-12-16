@@ -1,0 +1,108 @@
+0000 Function: main
+0001 BeginFunc 0
+0002 Init: numbers array 10 int 5,15,8,10,12,4,9,2,7,1
+0003 Init: size int 10
+0004 Init: swapped int 1
+0005 Init: index int 0
+0006 Init: temp int 0
+0007 Decl: idx int
+0008 idx := 0
+0009 _LABEL1:
+0010 if idx < 10 goto _LABEL2
+0011 goto _LABEL3
+0012 _LABEL4:
+0013 _TEMP1 := idx
+0014 idx := idx + 1
+0015 goto _LABEL1
+0016 _LABEL2:
+0017 _TEMP2 := idx * 1
+0018 _TEMP3 := _TEMP2 + 0
+0019 _TEMP4 := 4
+0020 _TEMP5 := _TEMP4 * _TEMP3
+0021 _TEMP6 := _TEMP5 + &numbers
+0022 _TEMP7 := (_TEMP6)
+0023 PushParam _TEMP7
+0024 FuncCall print_int 4
+0025 goto _LABEL4
+0026 _LABEL3:
+0027 _LABEL5:
+0028 if swapped goto _LABEL6
+0029 goto _LABEL7
+0030 _LABEL6:
+0031 swapped := 0
+0032 index := 9
+0033 _LABEL8:
+0034 if index >= 1 goto _LABEL9
+0035 goto _LABEL10
+0036 _LABEL11:
+0037 _TEMP8 := index
+0038 index := index - 1
+0039 goto _LABEL8
+0040 _LABEL9:
+0041 _TEMP9 := index * 1
+0042 _TEMP10 := _TEMP9 + 0
+0043 _TEMP11 := 4
+0044 _TEMP12 := _TEMP11 * _TEMP10
+0045 _TEMP13 := _TEMP12 + &numbers
+0046 _TEMP14 := index - 1
+0047 _TEMP15 := _TEMP14 * 1
+0048 _TEMP16 := _TEMP15 + 0
+0049 _TEMP17 := 4
+0050 _TEMP18 := _TEMP17 * _TEMP16
+0051 _TEMP19 := _TEMP18 + &numbers
+0052 if (_TEMP13) < (_TEMP19) goto _LABEL12
+0053 goto _LABEL13
+0054 _LABEL12:
+0055 _TEMP20 := index - 1
+0056 _TEMP21 := _TEMP20 * 1
+0057 _TEMP22 := _TEMP21 + 0
+0058 _TEMP23 := 4
+0059 _TEMP24 := _TEMP23 * _TEMP22
+0060 _TEMP25 := _TEMP24 + &numbers
+0061 temp := (_TEMP25)
+0062 _TEMP26 := index - 1
+0063 _TEMP27 := _TEMP26 * 1
+0064 _TEMP28 := _TEMP27 + 0
+0065 _TEMP29 := 4
+0066 _TEMP30 := _TEMP29 * _TEMP28
+0067 _TEMP31 := _TEMP30 + &numbers
+0068 _TEMP32 := index * 1
+0069 _TEMP33 := _TEMP32 + 0
+0070 _TEMP34 := 4
+0071 _TEMP35 := _TEMP34 * _TEMP33
+0072 _TEMP36 := _TEMP35 + &numbers
+0073 (_TEMP31) := (_TEMP36)
+0074 _TEMP37 := index * 1
+0075 _TEMP38 := _TEMP37 + 0
+0076 _TEMP39 := 4
+0077 _TEMP40 := _TEMP39 * _TEMP38
+0078 _TEMP41 := _TEMP40 + &numbers
+0079 (_TEMP41) := temp
+0080 swapped := 1
+0081 _LABEL13:
+0082 goto _LABEL11
+0083 _LABEL10:
+0084 goto _LABEL5
+0085 _LABEL7:
+0086 idx := 0
+0087 _LABEL14:
+0088 if idx < 10 goto _LABEL15
+0089 goto _LABEL16
+0090 _LABEL17:
+0091 _TEMP42 := idx
+0092 idx := idx + 1
+0093 goto _LABEL14
+0094 _LABEL15:
+0095 _TEMP43 := idx * 1
+0096 _TEMP44 := _TEMP43 + 0
+0097 _TEMP45 := 4
+0098 _TEMP46 := _TEMP45 * _TEMP44
+0099 _TEMP47 := _TEMP46 + &numbers
+0100 _TEMP48 := (_TEMP47)
+0101 PushParam _TEMP48
+0102 FuncCall print_int 4
+0103 goto _LABEL17
+0104 _LABEL16:
+0105 _TEMP49 := 0
+0106 return _TEMP49
+0107 EndFunc
