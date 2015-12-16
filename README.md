@@ -9,7 +9,12 @@ A simple compiler which can map a subset of c source code into mips assembly.
 * Array accesses and operations
 * Functions and recursion (limited)
 * Do-while loops
-* Print syscalls (works in MARS)
+* Print syscalls
+
+## Installation
+* flex and bison to scan and parse a given source code
+* Mars to execute a generated MIPS code
+* Graphviz to build an AST image
 
 ## Usage
 Compile:
